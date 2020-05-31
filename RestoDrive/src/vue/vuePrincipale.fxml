@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane hgap="10.0" prefHeight="400.0" prefWidth="800.0" vgap="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.VueControleur">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Fenetre d'accueil" />
+      <Button fx:id="buttClients" mnemonicParsing="false" onAction="#ouvreFenetreClients" prefHeight="25.0" prefWidth="111.0" text="CLIENTS" GridPane.rowIndex="1" />
+      <Button fx:id="buttCommandes" mnemonicParsing="false" onAction="#ouvreFenetreCommandes" prefHeight="25.0" prefWidth="110.0" text="COMMANDES" GridPane.rowIndex="2" />
+      <Button fx:id="buttArticles" mnemonicParsing="false" onAction="#ouvreFenetreArticles" prefHeight="25.0" prefWidth="110.0" text="ARTICLES" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

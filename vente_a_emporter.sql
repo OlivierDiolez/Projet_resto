@@ -116,21 +116,21 @@ CREATE TABLE IF NOT EXISTS `modereglt` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `produit`
+-- Structure de la table `article`
 --
 
-DROP TABLE IF EXISTS `produit`;
-CREATE TABLE IF NOT EXISTS `produit` (
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE IF NOT EXISTS `article` (
   `CodeProd` varchar(10) COLLATE utf8_bin NOT NULL,
   `NomProduit` varchar(40) COLLATE utf8_bin NOT NULL,
   `DescriptionProd` text COLLATE utf8_bin NOT NULL,
-  `PhotoTinyProd` tinyblob NOT NULL,
-  `PhotoLargeProd` blob NOT NULL,
+  `PhotoTinyProd` blob,
+  `PhotoLargeProd` blob,
   `CodeCat` varchar(10) COLLATE utf8_bin NOT NULL,
   `PrixHT` decimal(10,0) NOT NULL,
   `PrixTTC` decimal(10,0) NOT NULL,
   `CodeTVA` varchar(1) COLLATE utf8_bin NOT NULL,
-  `MntTVA` decimal(10,0) NOT NULL
+  `MntTVA` decimal(10,0)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
